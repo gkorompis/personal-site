@@ -7,8 +7,9 @@
 .navbar {
     background-color: #333;
     overflow: hidden;
-    
+
 }
+
 .navbar a {
     float: left;
     color: #ebebeb;
@@ -17,6 +18,7 @@
     text-decoration: none;
     font-size: 17px;
 }
+
 .navbar a:hover {
     background-color: #7d7d7d;
     color: rgba(59, 55, 55, 0.771);
@@ -36,29 +38,27 @@
 
 /* cards */
 .card {
+    width: 300px;
+    height: 135px;
     padding: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-family: 'Century Schoolbook', serif;
+    transition: opacity 2s ease;
 }
-
-/* comments */
-.comment {
+.card-details {
     padding: 10px;
-    border: 1px solid #efebeb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    opacity: 0;
-    animation: fade-in 1s forwards;
+    font-size: 12px;
 }
 
 /* grids and boxings */
 .grid_n2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, );
     grid-gap: 20px;
 }
+
 .grid_n3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -81,60 +81,21 @@
 .align-items-center {
     align-items: center;
 }
-/* animations */
-.hideme { 
-    animation: hide-me 2s forwards;
-}
-@keyframes hide-me {
-    from {
-        visibility: visible;
-        opacity: 100%;
-    }
-    to {
-        visibility: hidden;
-        opacity: 0
-    }
-}
 
-.fade-in {
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-}
-@keyframes fadeInOpacity {
-    30% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-.fade-out {
+.opacity-off {
     opacity: 0;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
 }
 
-@keyframes fadeInOpacity {
-    100% {
-        opacity: 1;
-    }
 
-    0% {
-        opacity: 0;
-    }
+button{
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #3d3b3b;
+    color: #ddd;
+    padding:3px;
+    margin: 20px;
+    width: 75px;
+    /* border: none; */
 }
+/* animation */
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
