@@ -28,4 +28,4 @@ let shuffle = () =>{
         }, 1300);
     }
 };
-shuffle()
+
