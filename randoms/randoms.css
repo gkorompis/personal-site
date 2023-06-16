@@ -6,8 +6,7 @@
 /* Navbar styles */
 .navbar {
     background-color: #333;
-    overflow: hidden;
-
+    overflow: hidden; 
 }
 
 .navbar a {
@@ -54,11 +53,6 @@
 
 
 /* grids and boxings */
-.grid_n2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, );
-    grid-gap: 20px;
-}
 
 .grid_n3 {
     display: grid;
@@ -86,7 +80,6 @@
 .opacity-off {
     opacity: 0;
 }
-
 
 button{
     font-size: 17px;

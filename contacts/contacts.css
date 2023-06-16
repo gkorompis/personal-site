@@ -35,28 +35,9 @@
     font-family: 'Century Schoolbook', serif;
 }
 
-/* cards */
-.card {
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-family: 'Century Schoolbook', serif;
-  
-}
-img, .card {
-    width: 250px;
-    height: 250px;
-    transition: 0.8s;
-}
-.card img:hover, .card:hover {
-    width: 300px;
-    height: 300px;
-    /* border-radius: 50%; */
-}
-
 /* comments */
 .comment {
+    font-size: small;
     padding: 10px;
     border: 1px solid #efebeb;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -64,22 +45,22 @@ img, .card {
     opacity: 0;
     animation: fade-in 1s forwards;
 }
-
-/* grids and boxings */
-.grid_n2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 20px;
+input {
+    border: 1px solid #efebeb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height:50px;
 }
+/* grids and boxings */
 .grid_n3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(1, minmax(300px, 300px));
+    grid-gap: 1px;
     transition: 5s;
 }
 
 .margin-top-bottom {
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 30px;
 }
 
@@ -95,6 +76,19 @@ img, .card {
     align-items: center;
 }
 /* animations */
+.hideme { 
+    animation: hide-me 2s forwards;
+}
+@keyframes hide-me {
+    from {
+        visibility: visible;
+        opacity: 100%;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0
+    }
+}
 
 @keyframes fade-in {
     0% {
@@ -103,4 +97,15 @@ img, .card {
     100% {
         opacity: 1;
     }
+}
+
+button {
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #3d3b3b;
+    color: #ddd;
+    padding: 3px;
+    margin: 20px;
+    width: 75px;
+    /* border: none; */
 }

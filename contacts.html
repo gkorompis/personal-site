@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contacts/contacts.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <heading>
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./randoms.html">Randoms</a>
+            <a href="#">Contact</a>
+        </div>
+    </heading>
+    
+    <!-- Banner -->
+    <div class="banner">
+        <h1 class="my-greeting">Contacts</h1>
+        <p class="my-intro">
+            &#9742 Feel free to reach me here 08123456789
+        </p>
+    </div>
+    
+    <!-- comment box -->
+    <div class="margin-top-bottom">
+        <h1>Post a message</h1>
+        <p>Write any message here :)</p>
+        <form onsubmit="postComment(event)" class="margin-top-bottom">
+            <input type="text" id="comment-input" placeholder="Write a note..." required>
+            <button type="submit">Post</button>
+        </form>
+       
+        <div class="grid_n3 margin-top-bottom" id="comment-list"></div>
+    </div>
+   
+
+    
+    <!-- <div>
+        <h3>Comments:</h3>
+        <div id="list-comment-box">
+        
+        </div>
+
+    </div> -->
+    </div>
+    <script src="./contacts/contacts.js">
+    </script>
+</body>
+</html>
