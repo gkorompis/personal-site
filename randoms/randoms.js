@@ -25,7 +25,7 @@ let shuffle = () =>{
             div.children[1].children[1].innerHTML = `artist: ${song.artist}`;
             div.children[1].children[2].innerHTML = `song id: ${song.id}`;
             div.classList.toggle('opacity-off');
-        }, 1300);
+        }, 900);
     }
 };
 
