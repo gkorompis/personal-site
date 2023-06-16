@@ -3,6 +3,11 @@
     font-family: 'Garamond', sans-serif;
 }
 
+footer {
+    margin-top: 60px;
+    font-size: 10px;
+}
+
 /* Navbar styles */
 .navbar {
     background-color: #333;

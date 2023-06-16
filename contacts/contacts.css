@@ -2,6 +2,10 @@
     color: #3d3b3b;
     font-family: 'Garamond', sans-serif;
 }
+footer {
+    margin-top: 60px;
+    font-size: 10px;
+}
 
 /* Navbar styles */
 .navbar {
