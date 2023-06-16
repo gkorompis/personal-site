@@ -28,8 +28,6 @@ let postComment =(event)=> {
                 commentList.prepend(newComment);
                 commentInput.value = '';
             }
-           
-            
             comment ? alert(`"${comment}" is posted!`) : alert("no comment!");
         }
 
