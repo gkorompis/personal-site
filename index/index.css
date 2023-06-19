@@ -2,6 +2,9 @@
     color: #3d3b3b;
     font-family: 'Garamond', sans-serif;
 }
+p {
+    font-size: 13px;
+}
 
 footer {
     margin-top: 60px;
@@ -25,12 +28,20 @@ footer {
 .navbar a:hover {
     background-color: #7d7d7d;
     color: rgba(59, 55, 55, 0.771);
-    transition: all 2s ease;
+    transition: all 1s ease;
+}
+/* badge */
+.badge {
+    height: 35vh;
+}
+.badge>section {
+    margin-left: 2vh;
 }
 
 /* banner */
 .banner {
-    width: 50vh;
+    width: 1fr;
+    height: 35vh;
     padding: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,6 +49,7 @@ footer {
     margin-bottom: 7px;
     border-radius: 5px;
     font-family: 'Century Schoolbook', serif;
+    background-image: linear-gradient(to left, #727272, rgb(213, 213, 216));
 }
 
 /* cards */
@@ -47,27 +59,21 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-family: 'Century Schoolbook', serif;
-  
+}
+.card > section {
+    margin-left: 2vh;
 }
 img, .card {
-    width: 250px;
-    height: 250px;
-    transition: 0.8s;
+    width: minmax(250px, 300px);
+    height: 80px;
+    align-items: center;
+    transition: 0.7s;
 }
 .card img:hover, .card:hover {
-    width: 300px;
-    height: 300px;
+    width: minmax(250px, 300px);
+    height: 120px;
+    align-items: center;
     /* border-radius: 50%; */
-}
-
-/* comments */
-.comment {
-    padding: 10px;
-    border: 1px solid #efebeb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    opacity: 0;
-    animation: fade-in 1s forwards;
 }
 
 /* grids and boxings */
@@ -78,7 +84,13 @@ img, .card {
 }
 .grid_n3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(150px, 500px));
+    grid-gap: 20px;
+    transition: 5s;
+}
+.grid_n4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 500px));
     grid-gap: 20px;
     transition: 5s;
 }
@@ -90,6 +102,7 @@ img, .card {
 
 .d-flex {
     display: flex;
+    flex-direction: row;
 }
 
 .justify-content-center {
@@ -98,14 +111,4 @@ img, .card {
 
 .align-items-center {
     align-items: center;
-}
-/* animations */
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
